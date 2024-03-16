@@ -1,0 +1,2233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1920</width>
+    <height>1100</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">font: 57 12pt &quot;Roboto Mono Medium&quot;;
+selection-background-color: rgb(50, 52, 55);
+background-color: rgb(50, 52, 55);
+alternate-background-color: rgb(50, 52, 55);
+border-color: rgb(50, 52, 55);
+border-top-color: rgb(50, 52, 55);
+selection-color: rgb(50, 52, 55);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(50, 52, 55);
+color: rgb(50, 52, 55);</string>
+   </property>
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>-1</x>
+      <y>-10</y>
+      <width>1931</width>
+      <height>1071</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(50, 52, 55);
+border-color: rgb(50, 52, 55);</string>
+    </property>
+    <property name="currentIndex">
+     <number>4</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>login</string>
+     </attribute>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>900</x>
+        <y>180</y>
+        <width>151</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Roboto Mono SemiBold</family>
+        <pointsize>28</pointsize>
+        <weight>7</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(226, 183, 20);
+font: 63 28pt &quot;Roboto Mono SemiBold&quot;;
+</string>
+      </property>
+      <property name="text">
+       <string>login</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>720</x>
+        <y>350</y>
+        <width>231</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(209, 208, 197);
+font: 57 14pt &quot;Roboto Mono Medium&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Username</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>720</x>
+        <y>470</y>
+        <width>231</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(209, 208, 197);
+font: 57 14pt &quot;Roboto Mono Medium&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Password</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="tf01">
+      <property name="geometry">
+       <rect>
+        <x>970</x>
+        <y>350</y>
+        <width>331</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(44, 46, 49);
+selection-color: rgb(202, 71, 84);
+color: rgb(209, 208, 197);</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="tf02">
+      <property name="geometry">
+       <rect>
+        <x>970</x>
+        <y>470</y>
+        <width>331</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(44, 46, 49);
+color: rgb(209, 208, 197);</string>
+      </property>
+      <property name="echoMode">
+       <enum>QLineEdit::Password</enum>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="b01">
+      <property name="geometry">
+       <rect>
+        <x>840</x>
+        <y>610</y>
+        <width>261</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(209, 208, 197);
+color: rgb(100, 102, 105);</string>
+      </property>
+      <property name="text">
+       <string>Sign in</string>
+      </property>
+     </widget>
+     <widget class="QCommandLinkButton" name="b02">
+      <property name="geometry">
+       <rect>
+        <x>830</x>
+        <y>830</y>
+        <width>291</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(100, 102, 105);
+font: 57 12pt &quot;Roboto Mono Medium&quot;;
+background-color: rgb(209, 208, 197);</string>
+      </property>
+      <property name="text">
+       <string>Switch to light mode</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>930</x>
+        <y>750</y>
+        <width>91</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(209, 208, 197);
+font: 57 14pt &quot;Roboto Mono Medium&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Theme:</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>register</string>
+     </attribute>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>780</x>
+        <y>130</y>
+        <width>431</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Roboto Mono SemiBold</family>
+        <pointsize>28</pointsize>
+        <weight>7</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(226, 183, 20);
+font: 63 28pt &quot;Roboto Mono SemiBold&quot;;
+</string>
+      </property>
+      <property name="text">
+       <string>Register User</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>670</x>
+        <y>490</y>
+        <width>231</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(209, 208, 197);
+font: 57 14pt &quot;Roboto Mono Medium&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Password</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>670</x>
+        <y>390</y>
+        <width>231</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(209, 208, 197);
+font: 57 14pt &quot;Roboto Mono Medium&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Username</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="tf12">
+      <property name="geometry">
+       <rect>
+        <x>940</x>
+        <y>390</y>
+        <width>341</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(44, 46, 49);
+color: rgb(209, 208, 197);</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="b11">
+      <property name="geometry">
+       <rect>
+        <x>820</x>
+        <y>710</y>
+        <width>261</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(209, 208, 197);
+color: rgb(100, 102, 105);</string>
+      </property>
+      <property name="text">
+       <string>Register</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>670</x>
+        <y>290</y>
+        <width>231</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(209, 208, 197);
+font: 57 14pt &quot;Roboto Mono Medium&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Name</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="tf11">
+      <property name="geometry">
+       <rect>
+        <x>940</x>
+        <y>290</y>
+        <width>341</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(44, 46, 49);
+color: rgb(209, 208, 197);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="tf13">
+      <property name="geometry">
+       <rect>
+        <x>940</x>
+        <y>490</y>
+        <width>341</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(44, 46, 49);
+color: rgb(209, 208, 197);</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="cb11">
+      <property name="geometry">
+       <rect>
+        <x>940</x>
+        <y>590</y>
+        <width>341</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(202, 71, 84);
+selection-color: rgb(100, 102, 105);
+selection-background-color: rgb(226, 183, 20);</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>Computer</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Information technology</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Artificial intelligence and data science</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Electronics and telecommunication</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Mechanical</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLabel" name="label_48">
+      <property name="geometry">
+       <rect>
+        <x>670</x>
+        <y>590</y>
+        <width>231</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(209, 208, 197);
+font: 57 14pt &quot;Roboto Mono Medium&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Branch </string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_3">
+     <attribute name="title">
+      <string>home</string>
+     </attribute>
+     <widget class="QLabel" name="label_19">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>140</y>
+        <width>411</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Roboto Mono SemiBold</family>
+        <pointsize>32</pointsize>
+        <weight>7</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(226, 183, 20);
+font: 63 32pt &quot;Roboto Mono SemiBold&quot;;
+</string>
+      </property>
+      <property name="text">
+       <string>Welcome User</string>
+      </property>
+     </widget>
+     <widget class="QCommandLinkButton" name="b22">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>360</y>
+        <width>311</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(100, 102, 105);
+font: 57 12pt &quot;Roboto Mono Medium&quot;;
+background-color: rgb(209, 208, 197);</string>
+      </property>
+      <property name="text">
+       <string>Insert marks</string>
+      </property>
+     </widget>
+     <widget class="QCommandLinkButton" name="b23">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>430</y>
+        <width>311</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(100, 102, 105);
+font: 57 12pt &quot;Roboto Mono Medium&quot;;
+background-color: rgb(209, 208, 197);</string>
+      </property>
+      <property name="text">
+       <string>View marks</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_20">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>290</y>
+        <width>231</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(209, 208, 197);
+font: 57 14pt &quot;Roboto Mono Medium&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Start</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_22">
+      <property name="geometry">
+       <rect>
+        <x>950</x>
+        <y>170</y>
+        <width>691</width>
+        <height>601</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>projectphoto.jpg</pixmap>
+      </property>
+     </widget>
+     <widget class="QCommandLinkButton" name="b24">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>500</y>
+        <width>311</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(100, 102, 105);
+font: 57 12pt &quot;Roboto Mono Medium&quot;;
+background-color: rgb(209, 208, 197);</string>
+      </property>
+      <property name="text">
+       <string>Add student details</string>
+      </property>
+     </widget>
+     <widget class="QCommandLinkButton" name="b25">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>570</y>
+        <width>311</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(100, 102, 105);
+font: 57 12pt &quot;Roboto Mono Medium&quot;;
+background-color: rgb(209, 208, 197);</string>
+      </property>
+      <property name="text">
+       <string>Register User</string>
+      </property>
+     </widget>
+     <widget class="QCommandLinkButton" name="b26">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>640</y>
+        <width>311</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(100, 102, 105);
+font: 57 12pt &quot;Roboto Mono Medium&quot;;
+background-color: rgb(209, 208, 197);</string>
+      </property>
+      <property name="text">
+       <string>Delete user</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_7">
+     <attribute name="title">
+      <string>insert</string>
+     </attribute>
+     <widget class="QGroupBox" name="gb31">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>-10</y>
+        <width>1911</width>
+        <height>281</height>
+       </rect>
+      </property>
+      <property name="mouseTracking">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="title">
+       <string>insertpage1</string>
+      </property>
+      <widget class="QLabel" name="label_21">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>20</y>
+         <width>741</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Roboto Mono SemiBold</family>
+         <pointsize>28</pointsize>
+         <weight>7</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(226, 183, 20);
+font: 63 28pt &quot;Roboto Mono SemiBold&quot;;
+</string>
+       </property>
+       <property name="text">
+        <string>Select branch and semester</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_24">
+       <property name="geometry">
+        <rect>
+         <x>720</x>
+         <y>160</y>
+         <width>231</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(209, 208, 197);
+font: 57 14pt &quot;Roboto Mono Medium&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Semester</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_23">
+       <property name="geometry">
+        <rect>
+         <x>720</x>
+         <y>100</y>
+         <width>231</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(209, 208, 197);
+font: 57 14pt &quot;Roboto Mono Medium&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Branch</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="cb31">
+       <property name="geometry">
+        <rect>
+         <x>930</x>
+         <y>110</y>
+         <width>271</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(202, 71, 84);
+selection-color: rgb(100, 102, 105);
+selection-background-color: rgb(226, 183, 20);</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>Computer</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Information technology</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Artificial intelligence and data science</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Electronics and telecommunication</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Mechanical</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QComboBox" name="cb32">
+       <property name="geometry">
+        <rect>
+         <x>930</x>
+         <y>170</y>
+         <width>271</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(202, 71, 84);
+selection-color: rgb(100, 102, 105);
+selection-background-color: rgb(226, 183, 20);</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>Semester 1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Semester 2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Semester 3</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Semester 4</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Semester 5</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Semester 6</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Semester 7</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Semester 8</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QPushButton" name="b31">
+       <property name="geometry">
+        <rect>
+         <x>790</x>
+         <y>230</y>
+         <width>241</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(209, 208, 197);
+color: rgb(100, 102, 105);</string>
+       </property>
+       <property name="text">
+        <string>Submit</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="gb32">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>280</y>
+        <width>1911</width>
+        <height>671</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>insertpage2</string>
+      </property>
+      <widget class="QLabel" name="label_25">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>20</y>
+         <width>341</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Roboto Mono SemiBold</family>
+         <pointsize>28</pointsize>
+         <weight>7</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(226, 183, 20);
+font: 63 28pt &quot;Roboto Mono SemiBold&quot;;
+</string>
+       </property>
+       <property name="text">
+        <string>Insert marks</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lbim301">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>80</y>
+         <width>261</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(209, 208, 197);
+font: 57 14pt &quot;Roboto Mono Medium&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Name</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lbim302">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>150</y>
+         <width>261</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(209, 208, 197);
+font: 57 14pt &quot;Roboto Mono Medium&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Name</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lbim303">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>220</y>
+         <width>261</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(209, 208, 197);
+font: 57 14pt &quot;Roboto Mono Medium&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Name</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="tf303">
+       <property name="geometry">
+        <rect>
+         <x>430</x>
+         <y>220</y>
+         <width>341</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(44, 46, 49);
+color: rgb(209, 208, 197);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lbim304">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>290</y>
+         <width>261</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(209, 208, 197);
+font: 57 14pt &quot;Roboto Mono Medium&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Name</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="tf304">
+       <property name="geometry">
+        <rect>
+         <x>430</x>
+         <y>290</y>
+         <width>341</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(44, 46, 49);
+color: rgb(209, 208, 197);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lbim305">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>360</y>
+         <width>261</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(209, 208, 197);
+font: 57 14pt &quot;Roboto Mono Medium&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Name</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="tf305">
+       <property name="geometry">
+        <rect>
+         <x>430</x>
+         <y>360</y>
+         <width>341</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(44, 46, 49);
+color: rgb(209, 208, 197);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lbim306">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>430</y>
+         <width>261</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(209, 208, 197);
+font: 57 14pt &quot;Roboto Mono Medium&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Name</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="tf306">
+       <property name="geometry">
+        <rect>
+         <x>430</x>
+         <y>430</y>
+         <width>341</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(44, 46, 49);
+color: rgb(209, 208, 197);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lbim307">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>500</y>
+         <width>261</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(209, 208, 197);
+font: 57 14pt &quot;Roboto Mono Medium&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Name</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="tf307">
+       <property name="geometry">
+        <rect>
+         <x>430</x>
+         <y>500</y>
+         <width>341</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(44, 46, 49);
+color: rgb(209, 208, 197);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lbim312">
+       <property name="geometry">
+        <rect>
+         <x>1010</x>
+         <y>360</y>
+         <width>311</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(209, 208, 197);
+font: 57 14pt &quot;Roboto Mono Medium&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Name</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lbim311">
+       <property name="geometry">
+        <rect>
+         <x>1010</x>
+         <y>290</y>
+         <width>311</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(209, 208, 197);
+font: 57 14pt &quot;Roboto Mono Medium&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Name</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="tf314">
+       <property name="geometry">
+        <rect>
+         <x>1320</x>
+         <y>500</y>
+         <width>341</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(44, 46, 49);
+color: rgb(209, 208, 197);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lbim314">
+       <property name="geometry">
+        <rect>
+         <x>1010</x>
+         <y>500</y>
+         <width>311</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(209, 208, 197);
+font: 57 14pt &quot;Roboto Mono Medium&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Name</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="tf309">
+       <property name="geometry">
+        <rect>
+         <x>1320</x>
+         <y>150</y>
+         <width>341</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(44, 46, 49);
+color: rgb(209, 208, 197);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="tf308">
+       <property name="geometry">
+        <rect>
+         <x>1320</x>
+         <y>80</y>
+         <width>341</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(44, 46, 49);
+color: rgb(209, 208, 197);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lbim310">
+       <property name="geometry">
+        <rect>
+         <x>1010</x>
+         <y>220</y>
+         <width>311</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(209, 208, 197);
+font: 57 14pt &quot;Roboto Mono Medium&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Name</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="tf310">
+       <property name="geometry">
+        <rect>
+         <x>1320</x>
+         <y>220</y>
+         <width>341</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(44, 46, 49);
+color: rgb(209, 208, 197);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="tf311">
+       <property name="geometry">
+        <rect>
+         <x>1320</x>
+         <y>290</y>
+         <width>341</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(44, 46, 49);
+color: rgb(209, 208, 197);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lbim309">
+       <property name="geometry">
+        <rect>
+         <x>1010</x>
+         <y>150</y>
+         <width>311</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(209, 208, 197);
+font: 57 14pt &quot;Roboto Mono Medium&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Name</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lbim308">
+       <property name="geometry">
+        <rect>
+         <x>1010</x>
+         <y>80</y>
+         <width>311</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(209, 208, 197);
+font: 57 14pt &quot;Roboto Mono Medium&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Name</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lbim313">
+       <property name="geometry">
+        <rect>
+         <x>1010</x>
+         <y>430</y>
+         <width>311</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(209, 208, 197);
+font: 57 14pt &quot;Roboto Mono Medium&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Name</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="tf312">
+       <property name="geometry">
+        <rect>
+         <x>1320</x>
+         <y>360</y>
+         <width>341</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(44, 46, 49);
+color: rgb(209, 208, 197);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="tf313">
+       <property name="geometry">
+        <rect>
+         <x>1320</x>
+         <y>430</y>
+         <width>341</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(44, 46, 49);
+color: rgb(209, 208, 197);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="b32">
+       <property name="geometry">
+        <rect>
+         <x>1370</x>
+         <y>580</y>
+         <width>241</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(209, 208, 197);
+color: rgb(100, 102, 105);</string>
+       </property>
+       <property name="text">
+        <string>Submit</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="tf315">
+       <property name="geometry">
+        <rect>
+         <x>430</x>
+         <y>570</y>
+         <width>341</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(44, 46, 49);
+color: rgb(209, 208, 197);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lbim315">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>570</y>
+         <width>261</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(209, 208, 197);
+font: 57 14pt &quot;Roboto Mono Medium&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Name</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="tf301">
+       <property name="geometry">
+        <rect>
+         <x>430</x>
+         <y>80</y>
+         <width>341</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(202, 71, 84);
+selection-color: rgb(100, 102, 105);
+selection-background-color: rgb(226, 183, 20);</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="tf302">
+       <property name="geometry">
+        <rect>
+         <x>430</x>
+         <y>150</y>
+         <width>341</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(202, 71, 84);
+selection-color: rgb(100, 102, 105);
+selection-background-color: rgb(226, 183, 20);</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="b33">
+       <property name="geometry">
+        <rect>
+         <x>1070</x>
+         <y>580</y>
+         <width>241</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(209, 208, 197);
+color: rgb(100, 102, 105);</string>
+       </property>
+       <property name="text">
+        <string>Upload</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_8">
+     <attribute name="title">
+      <string>view</string>
+     </attribute>
+     <widget class="QGroupBox" name="gb41">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>0</y>
+        <width>1901</width>
+        <height>351</height>
+       </rect>
+      </property>
+      <property name="mouseTracking">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="title">
+       <string>insertpage1</string>
+      </property>
+      <widget class="QLabel" name="label_40">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>20</y>
+         <width>741</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Roboto Mono SemiBold</family>
+         <pointsize>28</pointsize>
+         <weight>7</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(226, 183, 20);
+font: 63 28pt &quot;Roboto Mono SemiBold&quot;;
+</string>
+       </property>
+       <property name="text">
+        <string>Select branch and semester</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_41">
+       <property name="geometry">
+        <rect>
+         <x>720</x>
+         <y>160</y>
+         <width>231</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(209, 208, 197);
+font: 57 14pt &quot;Roboto Mono Medium&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Semester</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_42">
+       <property name="geometry">
+        <rect>
+         <x>720</x>
+         <y>100</y>
+         <width>231</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(209, 208, 197);
+font: 57 14pt &quot;Roboto Mono Medium&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Branch</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="cb41">
+       <property name="geometry">
+        <rect>
+         <x>930</x>
+         <y>110</y>
+         <width>271</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(202, 71, 84);
+selection-color: rgb(100, 102, 105);
+selection-background-color: rgb(226, 183, 20);</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>Computer</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Information technology</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Artificial intelligence and data science</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Electronics and telecommunication</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Mechanical</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QComboBox" name="cb42">
+       <property name="geometry">
+        <rect>
+         <x>930</x>
+         <y>170</y>
+         <width>271</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(202, 71, 84);
+selection-color: rgb(100, 102, 105);
+selection-background-color: rgb(226, 183, 20);</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>Semester 1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Semester 2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Semester 3</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Semester 4</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Semester 5</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Semester 6</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Semester 7</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Semester 8</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QPushButton" name="b41">
+       <property name="geometry">
+        <rect>
+         <x>790</x>
+         <y>290</y>
+         <width>241</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(209, 208, 197);
+color: rgb(100, 102, 105);</string>
+       </property>
+       <property name="text">
+        <string>Submit</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="cb43">
+       <property name="geometry">
+        <rect>
+         <x>930</x>
+         <y>230</y>
+         <width>271</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(202, 71, 84);
+selection-color: rgb(100, 102, 105);
+selection-background-color: rgb(226, 183, 20);</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>Based on whole class</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Based on individual</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QLabel" name="label_45">
+       <property name="geometry">
+        <rect>
+         <x>720</x>
+         <y>220</y>
+         <width>201</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(209, 208, 197);
+font: 57 14pt &quot;Roboto Mono Medium&quot;;</string>
+       </property>
+       <property name="text">
+        <string>View marks</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="gb42">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>360</y>
+        <width>1901</width>
+        <height>621</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>GroupBox</string>
+      </property>
+      <widget class="QLabel" name="label_43">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>20</y>
+         <width>341</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Roboto Mono SemiBold</family>
+         <pointsize>28</pointsize>
+         <weight>7</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(226, 183, 20);
+font: 63 28pt &quot;Roboto Mono SemiBold&quot;;
+</string>
+       </property>
+       <property name="text">
+        <string>view marks</string>
+       </property>
+      </widget>
+      <widget class="QTableWidget" name="tableWidget">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>80</y>
+         <width>1831</width>
+         <height>381</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(50, 52, 55);
+color: rgb(170, 170, 127);</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="b44">
+       <property name="geometry">
+        <rect>
+         <x>1630</x>
+         <y>500</y>
+         <width>241</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(209, 208, 197);
+color: rgb(100, 102, 105);</string>
+       </property>
+       <property name="text">
+        <string>Print</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="b43">
+       <property name="geometry">
+        <rect>
+         <x>1370</x>
+         <y>500</y>
+         <width>241</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(209, 208, 197);
+color: rgb(100, 102, 105);</string>
+       </property>
+       <property name="text">
+        <string>Get marks</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_44">
+       <property name="geometry">
+        <rect>
+         <x>900</x>
+         <y>500</y>
+         <width>211</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(209, 208, 197);
+font: 57 14pt &quot;Roboto Mono Medium&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Enter Roll no.:</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="tf41">
+       <property name="geometry">
+        <rect>
+         <x>1120</x>
+         <y>500</y>
+         <width>201</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(44, 46, 49);
+color: rgb(209, 208, 197);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_50">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>470</y>
+         <width>871</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(209, 208, 197);
+font: 57 9pt &quot;Roboto Mono Medium&quot;;</string>
+       </property>
+       <property name="text">
+        <string>MARKS :      0to39.99  40to44.99  45to49.99  50to59.99  60to69.99  70to74.99  75to79.99  80to100
+GRADE :       F           P         E          D          C          B          A          O
+GRADE POINT: 0.00       4.00      5.00       6.00       7.00       8.00        9.00      10.00</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_11">
+     <attribute name="title">
+      <string>Delete</string>
+     </attribute>
+     <widget class="QGroupBox" name="gb51">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>90</y>
+        <width>1911</width>
+        <height>791</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>GroupBox</string>
+      </property>
+      <widget class="QLabel" name="label_49">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>20</y>
+         <width>341</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Roboto Mono SemiBold</family>
+         <pointsize>28</pointsize>
+         <weight>7</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(226, 183, 20);
+font: 63 28pt &quot;Roboto Mono SemiBold&quot;;
+</string>
+       </property>
+       <property name="text">
+        <string>Delete User</string>
+       </property>
+      </widget>
+      <widget class="QTableWidget" name="tableWidget_3">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>210</y>
+         <width>741</width>
+         <height>461</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(50, 52, 55);
+color: rgb(170, 170, 127);</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="b51">
+       <property name="geometry">
+        <rect>
+         <x>1270</x>
+         <y>440</y>
+         <width>241</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(209, 208, 197);
+color: rgb(100, 102, 105);</string>
+       </property>
+       <property name="text">
+        <string>Delete User</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="cb501">
+       <property name="geometry">
+        <rect>
+         <x>1500</x>
+         <y>240</y>
+         <width>281</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(202, 71, 84);
+selection-color: rgb(100, 102, 105);
+selection-background-color: rgb(226, 183, 20);</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_46">
+       <property name="geometry">
+        <rect>
+         <x>990</x>
+         <y>240</y>
+         <width>441</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(209, 208, 197);
+font: 57 14pt &quot;Roboto Mono Medium&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Select an user to be deleted :</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_47">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>130</y>
+         <width>251</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(209, 208, 197);
+font: 57 14pt &quot;Roboto Mono Medium&quot;;</string>
+       </property>
+       <property name="text">
+        <string>List of users:</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_4">
+     <attribute name="title">
+      <string>student details</string>
+     </attribute>
+     <widget class="QLabel" name="label_15">
+      <property name="geometry">
+       <rect>
+        <x>680</x>
+        <y>360</y>
+        <width>231</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(209, 208, 197);
+font: 57 14pt &quot;Roboto Mono Medium&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Roll no.</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_16">
+      <property name="geometry">
+       <rect>
+        <x>730</x>
+        <y>100</y>
+        <width>541</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Roboto Mono SemiBold</family>
+        <pointsize>28</pointsize>
+        <weight>7</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(226, 183, 20);
+font: 63 28pt &quot;Roboto Mono SemiBold&quot;;
+</string>
+      </property>
+      <property name="text">
+       <string>Add Student Details</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_52">
+      <property name="geometry">
+       <rect>
+        <x>680</x>
+        <y>460</y>
+        <width>231</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(209, 208, 197);
+font: 57 14pt &quot;Roboto Mono Medium&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Branch </string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="tf62">
+      <property name="geometry">
+       <rect>
+        <x>950</x>
+        <y>360</y>
+        <width>341</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(44, 46, 49);
+color: rgb(209, 208, 197);</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="cb61">
+      <property name="geometry">
+       <rect>
+        <x>950</x>
+        <y>460</y>
+        <width>341</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(202, 71, 84);
+selection-color: rgb(100, 102, 105);
+selection-background-color: rgb(226, 183, 20);</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>Computer</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Information technology</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Artificial intelligence and data science</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Electronics and telecommunication</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Mechanical</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLabel" name="label_17">
+      <property name="geometry">
+       <rect>
+        <x>680</x>
+        <y>260</y>
+        <width>231</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(209, 208, 197);
+font: 57 14pt &quot;Roboto Mono Medium&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Name</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_18">
+      <property name="geometry">
+       <rect>
+        <x>680</x>
+        <y>560</y>
+        <width>231</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(209, 208, 197);
+font: 57 14pt &quot;Roboto Mono Medium&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Semester</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="b61">
+      <property name="geometry">
+       <rect>
+        <x>830</x>
+        <y>680</y>
+        <width>261</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(209, 208, 197);
+color: rgb(100, 102, 105);</string>
+      </property>
+      <property name="text">
+       <string>Save</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="tf61">
+      <property name="geometry">
+       <rect>
+        <x>950</x>
+        <y>260</y>
+        <width>341</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(44, 46, 49);
+color: rgb(209, 208, 197);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="cb62">
+      <property name="geometry">
+       <rect>
+        <x>950</x>
+        <y>560</y>
+        <width>341</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(202, 71, 84);
+selection-color: rgb(100, 102, 105);
+selection-background-color: rgb(226, 183, 20);</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>Semester 1</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Semester 2</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Semester 3</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Semester 4</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Semester 5</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Semester 6</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Semester 7</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Semester 8</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QCommandLinkButton" name="b62">
+      <property name="geometry">
+       <rect>
+        <x>810</x>
+        <y>830</y>
+        <width>281</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(100, 102, 105);
+font: 57 12pt &quot;Roboto Mono Medium&quot;;
+background-color: rgb(209, 208, 197);</string>
+      </property>
+      <property name="text">
+       <string>Upload a excel sheet</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_35">
+      <property name="geometry">
+       <rect>
+        <x>930</x>
+        <y>770</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(209, 208, 197);
+font: 57 14pt &quot;Roboto Mono Medium&quot;;</string>
+      </property>
+      <property name="text">
+       <string>OR</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1920</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(44, 46, 49);
+
+selection-background-color: rgb(209, 208, 197);
+color: rgb(226, 183, 20);
+font: 57 12pt &quot;Roboto Mono Medium&quot;;
+border-color: rgb(209, 208, 197);</string>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="menu11"/>
+    <addaction name="menu12"/>
+   </widget>
+   <widget class="QMenu" name="menuOptions">
+    <property name="title">
+     <string>Options</string>
+    </property>
+    <addaction name="menu31"/>
+    <addaction name="menu32"/>
+    <addaction name="menu33"/>
+    <addaction name="menu34"/>
+    <addaction name="menu35"/>
+   </widget>
+   <widget class="QMenu" name="menuExit">
+    <property name="title">
+     <string>Exit</string>
+    </property>
+    <addaction name="menu51"/>
+   </widget>
+   <widget class="QMenu" name="menuHome">
+    <property name="title">
+     <string>Home</string>
+    </property>
+    <addaction name="menu21"/>
+   </widget>
+   <widget class="QMenu" name="menuTheme">
+    <property name="title">
+     <string>Theme</string>
+    </property>
+    <addaction name="menu41"/>
+    <addaction name="menu42"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuHome"/>
+   <addaction name="menuOptions"/>
+   <addaction name="menuTheme"/>
+   <addaction name="menuExit"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="menu11">
+   <property name="text">
+    <string>Upload a excel sheet</string>
+   </property>
+  </action>
+  <action name="menu31">
+   <property name="text">
+    <string>Insert marks</string>
+   </property>
+  </action>
+  <action name="menu32">
+   <property name="text">
+    <string>View marks</string>
+   </property>
+  </action>
+  <action name="menu51">
+   <property name="text">
+    <string>Logout</string>
+   </property>
+  </action>
+  <action name="menu21">
+   <property name="text">
+    <string>Home</string>
+   </property>
+  </action>
+  <action name="menu34">
+   <property name="text">
+    <string>Register user</string>
+   </property>
+  </action>
+  <action name="menu35">
+   <property name="text">
+    <string>Delete user</string>
+   </property>
+  </action>
+  <action name="menu33">
+   <property name="text">
+    <string>Add student details</string>
+   </property>
+  </action>
+  <action name="menu41">
+   <property name="text">
+    <string>Light mode</string>
+   </property>
+  </action>
+  <action name="menu42">
+   <property name="text">
+    <string>Dark mode</string>
+   </property>
+  </action>
+  <action name="menu12">
+   <property name="text">
+    <string>Download a pdf</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
